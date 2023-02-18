@@ -19,8 +19,8 @@ z = distance * math.sin(latitude_radians)
 earth_iss_distance = math.sqrt(x**2 + y**2 + z**2) * 1000 # convert to meters
 
 # Calculate gravitational force between the Earth and the ISS
-G = 6.6743 * 10**-11 # gravitational constant
-earth_mass = 5.9722 * 10**24 # in kg
+G = 6.6743 * math.pow(10, -11) # gravitational constant
+earth_mass = 5.9722 * math.pow(10, 24) # in kg
 iss_mass = 420000 # in kg
 gravitational_force = (G * earth_mass * iss_mass) / (earth_iss_distance**2)
 
