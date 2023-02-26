@@ -20,4 +20,5 @@ Y = int(input("Enter amount of money for Bob: "))
 Z = int(input("Enter amount of money for Charlie: "))
 COST = int(input("Enter the cost of the subscription: "))
 
-print(buy_netflix(X, Y, Z, COST))
+names = buy_netflix(X, Y, Z, COST)
+print(f"{names[0]} and {names[1]} should buy the Netflix subscription.")
