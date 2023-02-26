@@ -13,12 +13,12 @@ def buy_netflix(X, Y, Z, COST):
             
             # If the total amount is greater than or equal to the cost, return the two names
             if total_money >= COST:
-                return people[i][0], people[j][0]
+                return print(f"{people[i][0]} and {people[j][0]} should buy the Netflix subscription.")
+    return print("No one can buy the subscription")
 
 X = int(input("Enter amount of money for Alice: "))
 Y = int(input("Enter amount of money for Bob: "))
 Z = int(input("Enter amount of money for Charlie: "))
 COST = int(input("Enter the cost of the subscription: "))
 
-names = buy_netflix(X, Y, Z, COST)
-print(f"{names[0]} and {names[1]} should buy the Netflix subscription.")
+buy_netflix(X, Y, Z, COST)
